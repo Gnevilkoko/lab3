@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab3.Model
+namespace lab3
 {
     enum Dishes
     {
