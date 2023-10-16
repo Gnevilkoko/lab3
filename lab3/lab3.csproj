@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\DataRepository.cs" />
+    <Compile Include="Model\Dishes.cs" />
+    <Compile Include="Model\Drinks.cs" />
     <Compile Include="Model\ResultData.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
     <Compile Include="View\SpirytusForm.cs">

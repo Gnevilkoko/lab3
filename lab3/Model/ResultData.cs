@@ -8,10 +8,10 @@ namespace lab3.Model
 {
     class ResultData
     {
-        private int resultSize;
+        private double resultSize;
         private double spirytusSize;
 
-        int ResultSize { get; set; }
+        double ResultSize { get; set; }
         double SpirytusSize { get; set; }
 
         public ResultData() 
@@ -19,10 +19,11 @@ namespace lab3.Model
 
         }
 
-        public ResultData(int resultSize, double spirytusSize)
+        public ResultData(double resultSize, double spirytusSize)
         {
             ResultSize = resultSize;
             SpirytusSize = spirytusSize;
         }
+
     }
 }

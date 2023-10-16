@@ -9,9 +9,31 @@ namespace lab3.Model
 
     class DataRepository
     {
-        Dictionary<string, int> DishesSizePairs;
-        Dictionary<string, double> DrinksSpirytusPairs;
+        public Dictionary<Dishes, double> DishesSizePairs;
+        public Dictionary<Drinks, double> DrinksSpirytusPairs;
 
         public DataRepository() { }
+
+        public void setDishes(double[] sizes)
+        {
+            foreach (var dishSize in sizes)
+            {
+                foreach(Dishes dish in Enum.GetValues(typeof(Dishes)))
+                {
+                    DishesSizePairs.Add(dish, dishSize);
+                }
+            }
+        }
+
+        public void setDrinks(double[] percents)
+        {
+            foreach(var spirytusPercent in percents)
+            {
+                foreach (Drinks drink in Enum.GetValues(typeof(Drinks)))
+                {
+                    DrinksSpirytusPairs.Add(drink, spirytusPercent);
+                }
+            }
+        }
     }
 }
