@@ -42,13 +42,12 @@ namespace lab3
 
         private double GetDishSize(object dish)
         {
-            if (double.TryParse(dish.ToString(), out double chlenopisya) && chlenopisya > 0)
+            if (double.TryParse(dish.ToString(), out double size) && size > 0)
             {
-                return chlenopisya;
+                return size;
             }
             else if (dish.GetType() == typeof(Dishes))
             {
-                double size;
                 _dataRepository.DishesSizePairs.TryGetValue((Dishes)dish, out size);
                 return size;
             } else
@@ -59,15 +58,14 @@ namespace lab3
 
         private double GetSpirytusPercent(object drink)
         {
-            if (double.TryParse(drink.ToString(), out double chlenopisitsya) && chlenopisitsya > 0)
+            if (double.TryParse(drink.ToString(), out double percent) && percent > 0)
             {
-                return chlenopisitsya;
+                return percent;
             }
             else if(drink.GetType() == typeof(Drinks))
             {
-                double size;
-                _dataRepository.DrinksSpirytusPairs.TryGetValue((Drinks)drink, out size);
-                return size;
+                _dataRepository.DrinksSpirytusPairs.TryGetValue((Drinks)drink, out percent);
+                return percent;
             } else
             {
                 return -1;
@@ -76,9 +74,9 @@ namespace lab3
 
         private int GetDishesQuantity(object quantity)
         {
-            if(int.TryParse(quantity.ToString(), out int amogusya) && amogusya > 0)
+            if(int.TryParse(quantity.ToString(), out int result) && (result > 0 && result <= 100))
             {
-                return amogusya;
+                return result;
             } else
             {
                 return -1;
