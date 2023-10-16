@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using lab3.Model;
+using static System.Windows.Forms.LinkLabel;
 
 namespace lab3
 {
@@ -41,7 +42,7 @@ namespace lab3
 
         private double GetDishSize(object dish)
         {
-            if (dish.GetType() == typeof(double))
+            if (double.TryParse(dish.ToString(), out double chlenopisya) && chlenopisya > 0)
             {
                 return (double)dish;
             }
@@ -58,7 +59,7 @@ namespace lab3
 
         private double GetSpirytusPercent(object drink)
         {
-            if (drink.GetType() == typeof(double))
+            if (double.TryParse(drink.ToString(), out double chlenopisitsya) && chlenopisitsya > 0)
             {
                 return (double)drink;
             }
@@ -75,7 +76,7 @@ namespace lab3
 
         private int GetDishesQuantity(object quantity)
         {
-            if(quantity.GetType() == typeof(int))
+            if(int.TryParse(quantity.ToString(), out int amogusya) && amogusya > 0)
             {
                 return (int)quantity;
             } else
