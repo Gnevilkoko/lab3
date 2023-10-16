@@ -16,5 +16,10 @@ namespace lab3
         {
             InitializeComponent();
         }
+
+        private void goButton_Click(object sender, EventArgs e)
+        {
+            this.Size = new System.Drawing.Size(610, Height);
+        }
     }
 }
