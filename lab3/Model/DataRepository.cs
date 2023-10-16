@@ -9,8 +9,8 @@ namespace lab3.Model
 
     class DataRepository
     {
-        public Dictionary<Dishes, double> DishesSizePairs;
-        public Dictionary<Drinks, double> DrinksSpirytusPairs;
+        public Dictionary<Dishes, double> DishesSizePairs = new Dictionary<Dishes, double>();
+        public Dictionary<Drinks, double> DrinksSpirytusPairs = new Dictionary<Drinks, double>();
 
         public DataRepository() { }
 
