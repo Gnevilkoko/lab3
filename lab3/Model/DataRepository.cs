@@ -16,24 +16,23 @@ namespace lab3.Model
 
         public void setDishes(double[] sizes)
         {
-            foreach (var dishSize in sizes)
+            Dishes[] dishes = (Dishes[]) Enum.GetValues(typeof(Dishes));
+
+            for(int i = 0; i < sizes.Length; i++)
             {
-                foreach(Dishes dish in Enum.GetValues(typeof(Dishes)))
-                {
-                    DishesSizePairs.Add(dish, dishSize);
-                }
-            }
+                DishesSizePairs.Add(dishes[i], sizes[i]);
+            }     
         }
 
         public void setDrinks(double[] percents)
         {
-            foreach(var spirytusPercent in percents)
+            Drinks[] drinks = (Drinks[]) Enum.GetValues(typeof(Drinks));
+
+            for(int i = 0; i < percents.Length; i++)
             {
-                foreach (Drinks drink in Enum.GetValues(typeof(Drinks)))
-                {
-                    DrinksSpirytusPairs.Add(drink, spirytusPercent);
-                }
+                DrinksSpirytusPairs.Add(drinks[i], percents[i]);
             }
+
         }
     }
 }
