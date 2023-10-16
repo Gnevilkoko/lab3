@@ -38,7 +38,7 @@
             this.spirytusSelectButton = new System.Windows.Forms.Button();
             this.resultSizeLabel = new System.Windows.Forms.Label();
             this.resultSizeBox = new System.Windows.Forms.TextBox();
-            this.spirytusCapasityBox = new System.Windows.Forms.TextBox();
+            this.spirytusSizeBox = new System.Windows.Forms.TextBox();
             this.spirytusSizeLabel = new System.Windows.Forms.Label();
             this.goButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -146,15 +146,15 @@
             this.resultSizeBox.TabIndex = 10;
             this.resultSizeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // spirytusCapasityBox
+            // spirytusSizeBox
             // 
-            this.spirytusCapasityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.spirytusCapasityBox.Location = new System.Drawing.Point(368, 43);
-            this.spirytusCapasityBox.Name = "spirytusCapasityBox";
-            this.spirytusCapasityBox.ReadOnly = true;
-            this.spirytusCapasityBox.Size = new System.Drawing.Size(33, 26);
-            this.spirytusCapasityBox.TabIndex = 12;
-            this.spirytusCapasityBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.spirytusSizeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.spirytusSizeBox.Location = new System.Drawing.Point(368, 43);
+            this.spirytusSizeBox.Name = "spirytusSizeBox";
+            this.spirytusSizeBox.ReadOnly = true;
+            this.spirytusSizeBox.Size = new System.Drawing.Size(33, 26);
+            this.spirytusSizeBox.TabIndex = 12;
+            this.spirytusSizeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // spirytusSizeLabel
             // 
@@ -179,13 +179,13 @@
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
-            // SpirytusScreen
+            // SpirytusForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 110);
+            this.ClientSize = new System.Drawing.Size(361, 110);
             this.Controls.Add(this.goButton);
-            this.Controls.Add(this.spirytusCapasityBox);
+            this.Controls.Add(this.spirytusSizeBox);
             this.Controls.Add(this.spirytusSizeLabel);
             this.Controls.Add(this.resultSizeBox);
             this.Controls.Add(this.resultSizeLabel);
@@ -199,7 +199,7 @@
             this.Controls.Add(this.dishSizeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "SpirytusScreen";
+            this.Name = "SpirytusForm";
             this.Text = "Spirytus Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -217,7 +217,7 @@
         private System.Windows.Forms.Button spirytusSelectButton;
         private System.Windows.Forms.Label resultSizeLabel;
         private System.Windows.Forms.TextBox resultSizeBox;
-        private System.Windows.Forms.TextBox spirytusCapasityBox;
+        private System.Windows.Forms.TextBox spirytusSizeBox;
         private System.Windows.Forms.Label spirytusSizeLabel;
         private System.Windows.Forms.Button goButton;
     }
