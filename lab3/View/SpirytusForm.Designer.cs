@@ -1,6 +1,6 @@
 ﻿namespace lab3
 {
-    partial class SpirytusScreen
+    partial class SpirytusForm
     {
         /// <summary>
         /// Required designer variable.

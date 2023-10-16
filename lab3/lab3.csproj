@@ -48,11 +48,11 @@
   <ItemGroup>
     <Compile Include="Model\DataRepository.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
-    <Compile Include="View\Form1.cs">
+    <Compile Include="View\SpirytusForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\SpirytusForm.Designer.cs">
+      <DependentUpon>SpirytusForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,8 +65,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="View\SpirytusForm.resx">
+      <DependentUpon>SpirytusForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

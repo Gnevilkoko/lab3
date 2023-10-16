@@ -16,7 +16,7 @@ namespace lab3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SpirytusScreen());
+            Application.Run(new SpirytusForm());
         }
     }
 }
