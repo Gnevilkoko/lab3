@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Class1.cs" />
     <Compile Include="Model\DataRepository.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>

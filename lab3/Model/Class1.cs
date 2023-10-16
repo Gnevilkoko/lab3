@@ -6,5 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab3.Model
 {
-    
+    internal class Class1
+    {
+    }
 }
