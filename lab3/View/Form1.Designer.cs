@@ -1,6 +1,6 @@
 ﻿namespace lab3
 {
-    partial class Form1
+    partial class spirytosScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -36,10 +36,10 @@
             this.dishesQuantityLabel = new System.Windows.Forms.Label();
             this.dishSizeSelectButton = new System.Windows.Forms.Button();
             this.spirytusSelectButton = new System.Windows.Forms.Button();
-            this.resultCapasityLabel = new System.Windows.Forms.Label();
-            this.resultCapasityBox = new System.Windows.Forms.TextBox();
+            this.resultSizeLabel = new System.Windows.Forms.Label();
+            this.resultSizeBox = new System.Windows.Forms.TextBox();
             this.spirytusCapasityBox = new System.Windows.Forms.TextBox();
-            this.spirytusCapasityLabel = new System.Windows.Forms.Label();
+            this.spirytusSizeLabel = new System.Windows.Forms.Label();
             this.goButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -82,9 +82,9 @@
             this.spirytusLabel.Location = new System.Drawing.Point(18, 63);
             this.spirytusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.spirytusLabel.Name = "spirytusLabel";
-            this.spirytusLabel.Size = new System.Drawing.Size(121, 33);
+            this.spirytusLabel.Size = new System.Drawing.Size(96, 24);
             this.spirytusLabel.TabIndex = 3;
-            this.spirytusLabel.Text = "Spirytus";
+            this.spirytusLabel.Text = "Spirytus %";
             this.spirytusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dishesQuantityBox
@@ -131,28 +131,26 @@
             this.spirytusSelectButton.Text = "Select";
             this.spirytusSelectButton.UseVisualStyleBackColor = true;
             // 
-            // resultCapasityLabel
+            // resultSizeLabel
             // 
-            this.resultCapasityLabel.AutoSize = true;
-            this.resultCapasityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultCapasityLabel.Location = new System.Drawing.Point(656, 17);
-            this.resultCapasityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resultCapasityLabel.Name = "resultCapasityLabel";
-            this.resultCapasityLabel.Size = new System.Drawing.Size(214, 33);
-            this.resultCapasityLabel.TabIndex = 9;
-            this.resultCapasityLabel.Text = "Result capasity";
-            this.resultCapasityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.resultSizeLabel.AutoSize = true;
+            this.resultSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resultSizeLabel.Location = new System.Drawing.Point(437, 11);
+            this.resultSizeLabel.Name = "resultSizeLabel";
+            this.resultSizeLabel.Size = new System.Drawing.Size(100, 24);
+            this.resultSizeLabel.TabIndex = 9;
+            this.resultSizeLabel.Text = "Result size";
+            this.resultSizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // resultCapasityBox
+            // resultSizeBox
             // 
-            this.resultCapasityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultCapasityBox.Location = new System.Drawing.Point(574, 14);
-            this.resultCapasityBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.resultCapasityBox.Name = "resultCapasityBox";
-            this.resultCapasityBox.ReadOnly = true;
-            this.resultCapasityBox.Size = new System.Drawing.Size(70, 35);
-            this.resultCapasityBox.TabIndex = 10;
-            this.resultCapasityBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.resultSizeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resultSizeBox.Location = new System.Drawing.Point(383, 9);
+            this.resultSizeBox.Name = "resultSizeBox";
+            this.resultSizeBox.ReadOnly = true;
+            this.resultSizeBox.Size = new System.Drawing.Size(48, 26);
+            this.resultSizeBox.TabIndex = 10;
+            this.resultSizeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // spirytusCapasityBox
             // 
@@ -165,17 +163,16 @@
             this.spirytusCapasityBox.TabIndex = 12;
             this.spirytusCapasityBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // spirytusCapasityLabel
+            // spirytusSizeLabel
             // 
-            this.spirytusCapasityLabel.AutoSize = true;
-            this.spirytusCapasityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.spirytusCapasityLabel.Location = new System.Drawing.Point(656, 68);
-            this.spirytusCapasityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.spirytusCapasityLabel.Name = "spirytusCapasityLabel";
-            this.spirytusCapasityLabel.Size = new System.Drawing.Size(237, 33);
-            this.spirytusCapasityLabel.TabIndex = 11;
-            this.spirytusCapasityLabel.Text = "Spirytus capasity";
-            this.spirytusCapasityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.spirytusSizeLabel.AutoSize = true;
+            this.spirytusSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.spirytusSizeLabel.Location = new System.Drawing.Point(437, 44);
+            this.spirytusSizeLabel.Name = "spirytusSizeLabel";
+            this.spirytusSizeLabel.Size = new System.Drawing.Size(114, 24);
+            this.spirytusSizeLabel.TabIndex = 11;
+            this.spirytusSizeLabel.Text = "Spirytus size";
+            this.spirytusSizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // goButton
             // 
@@ -189,16 +186,16 @@
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
-            // Form1
+            // spirytosScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 171);
+            this.ClientSize = new System.Drawing.Size(362, 111);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.spirytusCapasityBox);
-            this.Controls.Add(this.spirytusCapasityLabel);
-            this.Controls.Add(this.resultCapasityBox);
-            this.Controls.Add(this.resultCapasityLabel);
+            this.Controls.Add(this.spirytusSizeLabel);
+            this.Controls.Add(this.resultSizeBox);
+            this.Controls.Add(this.resultSizeLabel);
             this.Controls.Add(this.spirytusSelectButton);
             this.Controls.Add(this.dishSizeSelectButton);
             this.Controls.Add(this.dishesQuantityBox);
@@ -208,8 +205,7 @@
             this.Controls.Add(this.dishSizeBox);
             this.Controls.Add(this.dishSizeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "spirytosScreen";
             this.Text = "Spirytus Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,10 +221,10 @@
         private System.Windows.Forms.Label dishesQuantityLabel;
         private System.Windows.Forms.Button dishSizeSelectButton;
         private System.Windows.Forms.Button spirytusSelectButton;
-        private System.Windows.Forms.Label resultCapasityLabel;
-        private System.Windows.Forms.TextBox resultCapasityBox;
+        private System.Windows.Forms.Label resultSizeLabel;
+        private System.Windows.Forms.TextBox resultSizeBox;
         private System.Windows.Forms.TextBox spirytusCapasityBox;
-        private System.Windows.Forms.Label spirytusCapasityLabel;
+        private System.Windows.Forms.Label spirytusSizeLabel;
         private System.Windows.Forms.Button goButton;
     }
 }
