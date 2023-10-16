@@ -11,8 +11,8 @@ namespace lab3.Model
         private double resultSize;
         private double spirytusSize;
 
-        double ResultSize { get; set; }
-        double SpirytusSize { get; set; }
+        public double ResultSize { get; set; }
+        public double SpirytusSize { get; set; }
 
         public ResultData() 
         { 
@@ -23,7 +23,7 @@ namespace lab3.Model
         {
             ResultSize = resultSize;
             SpirytusSize = spirytusSize;
-        }
 
+        }
     }
 }
