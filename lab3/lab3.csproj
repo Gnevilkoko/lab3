@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\DataRepository.cs" />
+    <Compile Include="Model\ResultData.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
     <Compile Include="View\SpirytusForm.cs">
       <SubType>Form</SubType>

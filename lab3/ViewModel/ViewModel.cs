@@ -9,11 +9,16 @@ namespace lab3
 {
     class ViewModel
     {
-        DataRepository dataRepository = new DataRepository();
-
-        public ViewModel()
+        private DataRepository dataRepository = new DataRepository();
+        private SpirytusForm spirytusForm;
+        public ViewModel(SpirytusForm spirytusForm)
         {
+            this.spirytusForm = spirytusForm;
+        }
 
+        public void ClickGO()
+        {
+            spirytusForm.
         }
     }
 }
