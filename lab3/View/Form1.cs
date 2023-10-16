@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace lab3
 {
-    public partial class spirytusScreen : Form
+    public partial class SpirytusScreen : Form
     {
-        public spirytusScreen()
+        public SpirytusScreen()
         {
             InitializeComponent();
         }
