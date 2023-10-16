@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using lab3.Model;
 
 namespace lab3
@@ -17,16 +18,25 @@ namespace lab3
             _dataRepository.setDrinks(new double[] {40, 15.25, 41.25});
         }
 
-        public ResultData ClickGO(object dish, object drink, int dishesQuantity)
+        public ResultData ClickGO(object dishOrSize, object drinkOrPercent, object dishesQuantity)
         {
 
-            double dishSize = GetDishSize(dish);
-            double spirytusPercent = GetSpirytusPercent(drink);
+            double dishSize = GetDishSize(dishOrSize);
+            double spirytusPercent = GetSpirytusPercent(drinkOrPercent);
+            int quantity = GetDishesQuantity(dishesQuantity);
 
-            double resultSize = dishSize * dishesQuantity;
-            double spirytusSize = resultSize * spirytusPercent / 100;
+            if(dishSize == -1 || spirytusPercent == -1 || quantity == -1)
+            {
+                return null;
+            } else
+            {
+                return new ResultData(
+                dishSize * quantity,
+                (dishSize * quantity) * spirytusPercent / 100
+                );
+            }
 
-            return new ResultData(resultSize, spirytusSize);
+            
         }
 
         private double GetDishSize(object dish)
@@ -35,11 +45,14 @@ namespace lab3
             {
                 return (double)dish;
             }
-            else
+            else if (dish.GetType() == typeof(Dishes))
             {
                 double size;
                 _dataRepository.DishesSizePairs.TryGetValue((Dishes)dish, out size);
                 return size;
+            } else
+            {
+                return -1;
             }
         }
 
@@ -49,11 +62,25 @@ namespace lab3
             {
                 return (double)drink;
             }
-            else
+            else if(drink.GetType() == typeof(Drinks))
             {
                 double size;
                 _dataRepository.DrinksSpirytusPairs.TryGetValue((Drinks)drink, out size);
                 return size;
+            } else
+            {
+                return -1;
+            }
+        }
+
+        private int GetDishesQuantity(object quantity)
+        {
+            if(quantity.GetType() == typeof(int))
+            {
+                return (int)quantity;
+            } else
+            {
+                return -1;
             }
         }
     }
