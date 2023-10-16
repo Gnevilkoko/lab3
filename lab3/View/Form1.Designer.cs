@@ -47,9 +47,10 @@
             // 
             this.dishSizeLabel.AutoSize = true;
             this.dishSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dishSizeLabel.Location = new System.Drawing.Point(12, 9);
+            this.dishSizeLabel.Location = new System.Drawing.Point(18, 14);
+            this.dishSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dishSizeLabel.Name = "dishSizeLabel";
-            this.dishSizeLabel.Size = new System.Drawing.Size(85, 24);
+            this.dishSizeLabel.Size = new System.Drawing.Size(135, 33);
             this.dishSizeLabel.TabIndex = 1;
             this.dishSizeLabel.Text = "Dish size";
             this.dishSizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,18 +58,20 @@
             // dishSizeBox
             // 
             this.dishSizeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dishSizeBox.Location = new System.Drawing.Point(157, 9);
+            this.dishSizeBox.Location = new System.Drawing.Point(236, 14);
+            this.dishSizeBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dishSizeBox.Name = "dishSizeBox";
-            this.dishSizeBox.Size = new System.Drawing.Size(48, 26);
+            this.dishSizeBox.Size = new System.Drawing.Size(70, 35);
             this.dishSizeBox.TabIndex = 2;
             this.dishSizeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // spirytusBox
             // 
             this.spirytusBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.spirytusBox.Location = new System.Drawing.Point(157, 41);
+            this.spirytusBox.Location = new System.Drawing.Point(236, 63);
+            this.spirytusBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.spirytusBox.Name = "spirytusBox";
-            this.spirytusBox.Size = new System.Drawing.Size(48, 26);
+            this.spirytusBox.Size = new System.Drawing.Size(70, 35);
             this.spirytusBox.TabIndex = 4;
             this.spirytusBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -76,7 +79,8 @@
             // 
             this.spirytusLabel.AutoSize = true;
             this.spirytusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.spirytusLabel.Location = new System.Drawing.Point(12, 41);
+            this.spirytusLabel.Location = new System.Drawing.Point(18, 63);
+            this.spirytusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.spirytusLabel.Name = "spirytusLabel";
             this.spirytusLabel.Size = new System.Drawing.Size(96, 24);
             this.spirytusLabel.TabIndex = 3;
@@ -86,9 +90,10 @@
             // dishesQuantityBox
             // 
             this.dishesQuantityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dishesQuantityBox.Location = new System.Drawing.Point(157, 73);
+            this.dishesQuantityBox.Location = new System.Drawing.Point(236, 112);
+            this.dishesQuantityBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dishesQuantityBox.Name = "dishesQuantityBox";
-            this.dishesQuantityBox.Size = new System.Drawing.Size(48, 26);
+            this.dishesQuantityBox.Size = new System.Drawing.Size(70, 35);
             this.dishesQuantityBox.TabIndex = 6;
             this.dishesQuantityBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -96,9 +101,10 @@
             // 
             this.dishesQuantityLabel.AutoSize = true;
             this.dishesQuantityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dishesQuantityLabel.Location = new System.Drawing.Point(12, 73);
+            this.dishesQuantityLabel.Location = new System.Drawing.Point(18, 112);
+            this.dishesQuantityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dishesQuantityLabel.Name = "dishesQuantityLabel";
-            this.dishesQuantityLabel.Size = new System.Drawing.Size(136, 24);
+            this.dishesQuantityLabel.Size = new System.Drawing.Size(215, 33);
             this.dishesQuantityLabel.TabIndex = 5;
             this.dishesQuantityLabel.Text = "Dishes quantity";
             this.dishesQuantityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,9 +112,10 @@
             // dishSizeSelectButton
             // 
             this.dishSizeSelectButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dishSizeSelectButton.Location = new System.Drawing.Point(211, 12);
+            this.dishSizeSelectButton.Location = new System.Drawing.Point(316, 18);
+            this.dishSizeSelectButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dishSizeSelectButton.Name = "dishSizeSelectButton";
-            this.dishSizeSelectButton.Size = new System.Drawing.Size(55, 23);
+            this.dishSizeSelectButton.Size = new System.Drawing.Size(82, 35);
             this.dishSizeSelectButton.TabIndex = 7;
             this.dishSizeSelectButton.Text = "Select";
             this.dishSizeSelectButton.UseVisualStyleBackColor = true;
@@ -116,9 +123,10 @@
             // spirytusSelectButton
             // 
             this.spirytusSelectButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.spirytusSelectButton.Location = new System.Drawing.Point(211, 44);
+            this.spirytusSelectButton.Location = new System.Drawing.Point(316, 68);
+            this.spirytusSelectButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.spirytusSelectButton.Name = "spirytusSelectButton";
-            this.spirytusSelectButton.Size = new System.Drawing.Size(55, 23);
+            this.spirytusSelectButton.Size = new System.Drawing.Size(82, 35);
             this.spirytusSelectButton.TabIndex = 8;
             this.spirytusSelectButton.Text = "Select";
             this.spirytusSelectButton.UseVisualStyleBackColor = true;
@@ -147,10 +155,11 @@
             // spirytusCapasityBox
             // 
             this.spirytusCapasityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.spirytusCapasityBox.Location = new System.Drawing.Point(383, 42);
+            this.spirytusCapasityBox.Location = new System.Drawing.Point(574, 65);
+            this.spirytusCapasityBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.spirytusCapasityBox.Name = "spirytusCapasityBox";
             this.spirytusCapasityBox.ReadOnly = true;
-            this.spirytusCapasityBox.Size = new System.Drawing.Size(48, 26);
+            this.spirytusCapasityBox.Size = new System.Drawing.Size(70, 35);
             this.spirytusCapasityBox.TabIndex = 12;
             this.spirytusCapasityBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -168,9 +177,10 @@
             // goButton
             // 
             this.goButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.goButton.Location = new System.Drawing.Point(288, 33);
+            this.goButton.Location = new System.Drawing.Point(432, 51);
+            this.goButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.goButton.Name = "goButton";
-            this.goButton.Size = new System.Drawing.Size(61, 45);
+            this.goButton.Size = new System.Drawing.Size(92, 69);
             this.goButton.TabIndex = 13;
             this.goButton.Text = "GO";
             this.goButton.UseVisualStyleBackColor = true;
@@ -178,7 +188,7 @@
             // 
             // spirytusScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 111);
             this.Controls.Add(this.goButton);
