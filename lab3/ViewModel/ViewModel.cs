@@ -44,7 +44,7 @@ namespace lab3
         {
             if (double.TryParse(dish.ToString(), out double chlenopisya) && chlenopisya > 0)
             {
-                return (double)dish;
+                return chlenopisya;
             }
             else if (dish.GetType() == typeof(Dishes))
             {
@@ -61,7 +61,7 @@ namespace lab3
         {
             if (double.TryParse(drink.ToString(), out double chlenopisitsya) && chlenopisitsya > 0)
             {
-                return (double)drink;
+                return chlenopisitsya;
             }
             else if(drink.GetType() == typeof(Drinks))
             {
@@ -78,7 +78,7 @@ namespace lab3
         {
             if(int.TryParse(quantity.ToString(), out int amogusya) && amogusya > 0)
             {
-                return (int)quantity;
+                return amogusya;
             } else
             {
                 return -1;
