@@ -1,6 +1,6 @@
 ﻿namespace lab3
 {
-    partial class spirytosScreen
+    partial class spirytusScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -176,7 +176,7 @@
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
-            // spirytosScreen
+            // spirytusScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +195,7 @@
             this.Controls.Add(this.dishSizeBox);
             this.Controls.Add(this.dishSizeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "spirytosScreen";
+            this.Name = "spirytusScreen";
             this.Text = "Spirytus Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
