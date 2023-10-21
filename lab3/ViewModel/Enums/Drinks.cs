@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab3.Model
 {
-    enum Drinks
+    public enum Drinks
     {
         Vodka,
         Wine,

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab3
 {
-    enum Dishes
+    public enum Dishes
     {
         Glass,
         Mug,

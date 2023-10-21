@@ -9,7 +9,7 @@ using static System.Windows.Forms.LinkLabel;
 
 namespace lab3
 {
-    class ViewModel
+    public class ViewModel
     {
         private DataRepository _dataRepository = new DataRepository();
 

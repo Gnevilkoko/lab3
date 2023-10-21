@@ -50,7 +50,13 @@ namespace lab3
         private void dishSizeSelectButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new DishSelectForm(this).Show();
+            new DishSelectForm(this, _viewModel, this.dishSizeBox).Show();
+        }
+
+        private void spirytusSelectButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new DrinkSelectForm(this, _viewModel, this.spirytusBox).Show();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab3.Model
 {
-    class ResultData
+    public class ResultData
     {
 
         public double ResultSize { get; set; }

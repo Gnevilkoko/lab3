@@ -2,7 +2,7 @@
 
 namespace lab3.View
 {
-    partial class DishSelectForm : Form
+    partial class DishSelectForm
     {
         /// <summary>
         /// Required designer variable.
@@ -83,7 +83,6 @@ namespace lab3.View
             this.mugRadioButton.TabStop = true;
             this.mugRadioButton.Text = "Mug";
             this.mugRadioButton.UseVisualStyleBackColor = true;
-            this.mugRadioButton.CheckedChanged += new System.EventHandler(this.mugRadioButton_CheckedChanged);
             // 
             // glassRadioButton
             // 
@@ -134,7 +133,7 @@ namespace lab3.View
             this.Controls.Add(this.glassPicture);
             this.Controls.Add(this.mugPicture);
             this.Name = "DishSelectForm";
-            this.Text = "DishSelectForm";
+            this.Text = "Dish Selection";
             ((System.ComponentModel.ISupportInitialize)(this.shotPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glassPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mugPicture)).EndInit();

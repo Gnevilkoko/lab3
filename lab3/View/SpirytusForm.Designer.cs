@@ -123,12 +123,13 @@
             this.spirytusSelectButton.TabIndex = 8;
             this.spirytusSelectButton.Text = "Select";
             this.spirytusSelectButton.UseVisualStyleBackColor = true;
+            this.spirytusSelectButton.Click += new System.EventHandler(this.spirytusSelectButton_Click);
             // 
             // resultSizeLabel
             // 
             this.resultSizeLabel.AutoSize = true;
             this.resultSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.resultSizeLabel.Location = new System.Drawing.Point(432, 9);
+            this.resultSizeLabel.Location = new System.Drawing.Point(459, 9);
             this.resultSizeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.resultSizeLabel.Name = "resultSizeLabel";
             this.resultSizeLabel.Size = new System.Drawing.Size(100, 24);
@@ -143,7 +144,7 @@
             this.resultSizeBox.Margin = new System.Windows.Forms.Padding(2);
             this.resultSizeBox.Name = "resultSizeBox";
             this.resultSizeBox.ReadOnly = true;
-            this.resultSizeBox.Size = new System.Drawing.Size(60, 26);
+            this.resultSizeBox.Size = new System.Drawing.Size(87, 26);
             this.resultSizeBox.TabIndex = 10;
             this.resultSizeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -153,7 +154,7 @@
             this.spirytusSizeBox.Location = new System.Drawing.Point(368, 43);
             this.spirytusSizeBox.Name = "spirytusSizeBox";
             this.spirytusSizeBox.ReadOnly = true;
-            this.spirytusSizeBox.Size = new System.Drawing.Size(59, 26);
+            this.spirytusSizeBox.Size = new System.Drawing.Size(86, 26);
             this.spirytusSizeBox.TabIndex = 12;
             this.spirytusSizeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -161,7 +162,7 @@
             // 
             this.spirytusSizeLabel.AutoSize = true;
             this.spirytusSizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.spirytusSizeLabel.Location = new System.Drawing.Point(432, 43);
+            this.spirytusSizeLabel.Location = new System.Drawing.Point(459, 43);
             this.spirytusSizeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.spirytusSizeLabel.Name = "spirytusSizeLabel";
             this.spirytusSizeLabel.Size = new System.Drawing.Size(114, 24);

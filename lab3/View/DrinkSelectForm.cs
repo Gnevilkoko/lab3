@@ -1,8 +1,8 @@
-﻿using System;
+﻿using lab3.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,18 +11,18 @@ using System.Windows.Forms;
 
 namespace lab3.View
 {
-    public partial class DishSelectForm : Form
+    public partial class DrinkSelectForm : Form
     {
         private SpirytusForm _spirytusForm;
-        private TextBox _dishSizeTextBox;
+        private TextBox _drinkSizeTextBox;
         private ViewModel _viewModel;
 
-        public DishSelectForm(SpirytusForm spirytusForm, ViewModel viewModel, TextBox dishSizeTextBox)
+        public DrinkSelectForm(SpirytusForm spirytusForm, ViewModel viewModel, TextBox drinkSizeTextBox)
         {
             InitializeComponent();
             this._viewModel = viewModel;
             this._spirytusForm = spirytusForm;
-            this._dishSizeTextBox = dishSizeTextBox;
+            this._drinkSizeTextBox = drinkSizeTextBox;
         }
 
         protected override void OnFormClosed(FormClosedEventArgs e)
@@ -38,18 +38,17 @@ namespace lab3.View
         {
             this.Close();
             _spirytusForm.Show();
-            _dishSizeTextBox.Text = _viewModel.GetDishSize(GetSelectedDish()).ToString();
-
+            _drinkSizeTextBox.Text = _viewModel.GetSpirytusPercent(GetSelectedDrink()).ToString();
         }
 
-        private Dishes GetSelectedDish()
+        private Drinks GetSelectedDrink()
         {
-            if (mugRadioButton.Checked)
-                return Dishes.Mug;
-            else if(glassRadioButton.Checked) 
-                return Dishes.Glass;
+            if (vodkaRadioButton.Checked)
+                return Drinks.Vodka;
+            else if (wineRadioButton.Checked)
+                return Drinks.Wine;
             else
-                return Dishes.Shot;
+                return Drinks.Whiskey;
         }
     }
 }

@@ -57,6 +57,12 @@
     <Compile Include="View\DishSelectForm.Designer.cs">
       <DependentUpon>DishSelectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\DrinkSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DrinkSelectForm.Designer.cs">
+      <DependentUpon>DrinkSelectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SpirytusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </Compile>
     <EmbeddedResource Include="View\DishSelectForm.resx">
       <DependentUpon>DishSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DrinkSelectForm.resx">
+      <DependentUpon>DrinkSelectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SpirytusForm.resx">
       <DependentUpon>SpirytusForm.cs</DependentUpon>
@@ -99,6 +108,9 @@
     <Content Include="View\Images\glass.png" />
     <Content Include="View\Images\mug.png" />
     <Content Include="View\Images\shot.png" />
+    <Content Include="View\Images\vodka.png" />
+    <Content Include="View\Images\whiskey.png" />
+    <Content Include="View\Images\wine.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
