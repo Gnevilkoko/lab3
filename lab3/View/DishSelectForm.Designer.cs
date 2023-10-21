@@ -1,6 +1,8 @@
-﻿namespace lab3.View
+﻿using System.Windows.Forms;
+
+namespace lab3.View
 {
-    partial class DishSelectForm
+    partial class DishSelectForm : Form
     {
         /// <summary>
         /// Required designer variable.

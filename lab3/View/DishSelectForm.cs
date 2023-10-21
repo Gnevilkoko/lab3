@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -39,7 +40,11 @@ namespace lab3.View
         private void selectDishButton_Click(object sender, EventArgs e)
         {
             _spirytusForm.Show();
-            _dishSizeTextBox.Text = _viewModel.Get
+            Dishes dishes = GetSelectedDish();
+            Console.WriteLine(dishes);
+            double penis = _viewModel.GetDishSize(Dishes.Mug);
+            Console.WriteLine(penis);
+            //_dishSizeTextBox.Text = _viewModel.GetDishSize(GetSelectedDish()).ToString();
 
         }
 
