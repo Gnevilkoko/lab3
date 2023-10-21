@@ -22,9 +22,9 @@ namespace lab3
         public ResultData ClickGO(String dishOrSize, String drinkOrPercent, String dishesQuantity)
         {
 
-            double dishSize = double.Parse(dishOrSize);
-            double spirytusPercent = double.Parse(drinkOrPercent);
-            int quantity = GetDishesQuantity(dishesQuantity);
+            double dishSize = ParseToSize(dishOrSize);
+            double spirytusPercent = ParseToPercent(drinkOrPercent);
+            int quantity = ParseToQuantity(dishesQuantity);
 
             if(dishSize == -1 || spirytusPercent == -1 || quantity == -1)
             {
@@ -41,23 +41,28 @@ namespace lab3
         }
         private double ParseToSize(String dishOrSize)
         {
-            double.TryParse(dishOrSize, out double size) && size > 0 ? return size; : return -1;
+            return (double.TryParse(dishOrSize, out double size) && size > 0) ? size : -1;
         }
 
-        private double ParseToPercent(String dishOrSize)
+        private double ParseToPercent(String drinkOrPercent)
         {
-            double.TryParse(drink.ToString(), out double percent) && percent > 0 ? return percent; : return -1;
+            return (double.TryParse(drinkOrPercent, out double percent) && percent > 0) ? percent : -1;
+        }
+
+        private int ParseToQuantity(String dishesQuantity)
+        {
+            return int.TryParse(dishesQuantity, out int quantity) && quantity > 0 ? quantity : -1;
         }
 
         public double GetDishSize(Dishes dish)
         {
-            _dataRepository.DishesSizePairs.TryGetValue((Dishes)dish, out double size);
+            _dataRepository.DishesSizePairs.TryGetValue(dish, out double size);
             return size;
         }
 
         public double GetSpirytusPercent(Drinks drink)
         {
-            _dataRepository.DrinksSpirytusPairs.TryGetValue((Dishes)dish, out double size);
+            _dataRepository.DrinksSpirytusPairs.TryGetValue(drink, out double size);
             return size;
         }
     }
