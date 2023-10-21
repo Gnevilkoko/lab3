@@ -51,6 +51,12 @@
     <Compile Include="ViewModel\Enums\Drinks.cs" />
     <Compile Include="Model\ResultData.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
+    <Compile Include="View\DishSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DishSelectForm.Designer.cs">
+      <DependentUpon>DishSelectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\SpirytusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,7 +73,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\DishSelectForm.resx">
+      <DependentUpon>DishSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\SpirytusForm.resx">
       <DependentUpon>SpirytusForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,5 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="View\Images\glass.png" />
+    <Content Include="View\Images\mug.png" />
+    <Content Include="View\Images\shot.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
