@@ -19,11 +19,11 @@ namespace lab3
             _dataRepository.setDrinks(new double[] {40, 15.25, 41.25});
         }
 
-        public ResultData ClickGO(object dishOrSize, object drinkOrPercent, object dishesQuantity)
+        public ResultData ClickGO(String dishOrSize, String drinkOrPercent, String dishesQuantity)
         {
 
-            double dishSize = GetDishSize(dishOrSize);
-            double spirytusPercent = GetSpirytusPercent(drinkOrPercent);
+            double dishSize = double.Parse(dishOrSize);
+            double spirytusPercent = double.Parse(drinkOrPercent);
             int quantity = GetDishesQuantity(dishesQuantity);
 
             if(dishSize == -1 || spirytusPercent == -1 || quantity == -1)
@@ -39,48 +39,26 @@ namespace lab3
 
             
         }
-
-        public double GetDishSize(object dish)
+        private double ParseToSize(String dishOrSize)
         {
-            if (double.TryParse(dish.ToString(), out double size) && size > 0)
-            {
-                return size;
-            }
-            else if (dish.GetType() == typeof(Dishes))
-            {
-                _dataRepository.DishesSizePairs.TryGetValue((Dishes)dish, out size);
-                return size;
-            } else
-            {
-                return -1;
-            }
+            double.TryParse(dishOrSize, out double size) && size > 0 ? return size; : return -1;
         }
 
-        public double GetSpirytusPercent(object drink)
+        private double ParseToPercent(String dishOrSize)
         {
-            if (double.TryParse(drink.ToString(), out double percent) && percent > 0)
-            {
-                return percent;
-            }
-            else if(drink.GetType() == typeof(Drinks))
-            {
-                _dataRepository.DrinksSpirytusPairs.TryGetValue((Drinks)drink, out percent);
-                return percent;
-            } else
-            {
-                return -1;
-            }
+            double.TryParse(drink.ToString(), out double percent) && percent > 0 ? return percent; : return -1;
         }
 
-        public int GetDishesQuantity(object quantity)
+        public double GetDishSize(Dishes dish)
         {
-            if(int.TryParse(quantity.ToString(), out int result) && (result > 0 && result <= 100))
-            {
-                return result;
-            } else
-            {
-                return -1;
-            }
+            _dataRepository.DishesSizePairs.TryGetValue((Dishes)dish, out double size);
+            return size;
+        }
+
+        public double GetSpirytusPercent(Drinks drink)
+        {
+            _dataRepository.DrinksSpirytusPairs.TryGetValue((Dishes)dish, out double size);
+            return size;
         }
     }
 }
