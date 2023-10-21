@@ -40,7 +40,7 @@ namespace lab3
             
         }
 
-        private double GetDishSize(object dish)
+        public double GetDishSize(object dish)
         {
             if (double.TryParse(dish.ToString(), out double size) && size > 0)
             {
@@ -56,7 +56,7 @@ namespace lab3
             }
         }
 
-        private double GetSpirytusPercent(object drink)
+        public double GetSpirytusPercent(object drink)
         {
             if (double.TryParse(drink.ToString(), out double percent) && percent > 0)
             {
@@ -72,7 +72,7 @@ namespace lab3
             }
         }
 
-        private int GetDishesQuantity(object quantity)
+        public int GetDishesQuantity(object quantity)
         {
             if(int.TryParse(quantity.ToString(), out int result) && (result > 0 && result <= 100))
             {
