@@ -8,8 +8,6 @@ namespace lab3.Model
 {
     class ResultData
     {
-        private double resultSize;
-        private double spirytusSize;
 
         public double ResultSize { get; set; }
         public double SpirytusSize { get; set; }

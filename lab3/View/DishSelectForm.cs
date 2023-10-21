@@ -39,7 +39,7 @@ namespace lab3.View
         private void selectDishButton_Click(object sender, EventArgs e)
         {
             _spirytusForm.Show();
-            _dishSizeTextBox.Text = _viewModel.Get
+           // _dishSizeTextBox.Text = _viewModel.Get
 
         }
 
